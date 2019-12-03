@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite43217b570f5bb25de568328c257ccb4
+class ComposerStaticInit7dc6b0a7bc3fba50484153246229196b
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -16,6 +16,7 @@ class ComposerStaticInite43217b570f5bb25de568328c257ccb4
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
@@ -81,6 +82,7 @@ class ComposerStaticInite43217b570f5bb25de568328c257ccb4
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
+            'PhpOption\\' => 10,
         ),
         'O' => 
         array (
@@ -282,6 +284,10 @@ class ComposerStaticInite43217b570f5bb25de568328c257ccb4
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -375,10 +381,6 @@ class ComposerStaticInite43217b570f5bb25de568328c257ccb4
     public static $prefixesPsr0 = array (
         'P' => 
         array (
-            'PhpOption\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
-            ),
             'Parsedown' => 
             array (
                 0 => __DIR__ . '/..' . '/erusev/parsedown',
@@ -4275,10 +4277,10 @@ class ComposerStaticInite43217b570f5bb25de568328c257ccb4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite43217b570f5bb25de568328c257ccb4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite43217b570f5bb25de568328c257ccb4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite43217b570f5bb25de568328c257ccb4::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInite43217b570f5bb25de568328c257ccb4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7dc6b0a7bc3fba50484153246229196b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7dc6b0a7bc3fba50484153246229196b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7dc6b0a7bc3fba50484153246229196b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit7dc6b0a7bc3fba50484153246229196b::$classMap;
 
         }, null, ClassLoader::class);
     }
